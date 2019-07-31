@@ -1,5 +1,6 @@
 package com.hendisantika.springbootangular8demo.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -18,11 +19,21 @@ import javax.persistence.Id;
  */
 @Entity
 @Data
+@AllArgsConstructor
 public class User {
-    private final String name;
-    private final String email;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    private String name;
+    private String email;
 
+    public User() {
+        this.name = "";
+        this.email = "";
+    }
+
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }
