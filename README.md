@@ -8,3 +8,18 @@ We assume that You already have maven, nodejs & npm installed on your local.
 4. Run the frontend app: `cd angular8-client && npm install && ng serve --o`
  
 ## Screen shot
+Home Page
+
+![Home Page](img/home.png "Home Page")
+
+Add New User
+
+![Add New User](img/add1.png "Add New User")
+
+Add New User
+
+![Add New User](img/add2.png "Add New User")
+
+List Users
+
+![List Users](img/list.png "List Users")
